@@ -1,0 +1,19 @@
+{
+            double a, b, s=0;
+            char r;
+            a = int.Parse(Console.ReadLine());
+            r = Console.ReadKey().KeyChar;
+            b = int.Parse(Console.ReadLine());
+            if (r == '*')
+                s = a * b;
+            else if (r == '/')
+                s = a / b;
+            else if (r == '+')
+                s = a + b;
+            else if (r == '-')
+                s = a - b;
+            else
+                Console.WriteLine("eror");
+            Console.WriteLine("s=" + s);
+            Console.ReadLine();
+        }
